@@ -75,3 +75,52 @@ con subdirectorios para cada tipo de componente. Cada componente tiene sus
 archivos específicos (JS y CSS) para mantener la coherencia y facilitar el mantenimiento 
 del código. El componente App es el componente principal que utiliza y organiza los demás 
 componentes para formar la interfaz de usuario completa.
+
+
+
+USO DE HOOKS EXPLICACIÓN: 
+
+En NoteList.js:
+
+    const [notes, setNotes] = useState([]);
+
+    useEffect(() => {
+    // Código para cargar notas desde localStorage
+    }, []);
+
+    useEffect(() => {
+    // Código para guardar notas en localStorage cuando cambian
+    }, [notes]);
+
+    useState se utiliza para manejar el estado de las notas en NoteList.
+    useEffect se utiliza para cargar las notas desde el almacenamiento local 
+    cuando el componente se monta ([] como dependencia) y para guardar las notas en 
+    el almacenamiento local cada vez que el estado de las notas cambia ([notes] como dependencia).
+
+En NoteEditor.js:
+
+    const [title, setTitle] = useState('');
+    const [content, setContent] = useState('');
+
+    useEffect(() => {
+    // Código para manejar la lógica cuando el estado cambia
+    }, [title, content]);
+    useState se utiliza para manejar el estado del título y el contenido en NoteEditor.
+    useEffect se utiliza para ejecutar lógica cuando el estado del título o el contenido 
+    cambia ([title, content] como dependencias).
+
+En App.js:
+
+    const [notes, setNotes] = useState([]);
+
+    useEffect(() => {
+    // Código para cargar notas desde localStorage
+    }, []);
+
+    useEffect(() => {
+    // Código para guardar notas en localStorage cuando cambian
+    }, [notes]);
+
+useState se utiliza para manejar el estado de las notas en App.
+useEffect se utiliza para cargar las notas desde el almacenamiento local cuando el componente se monta ([] como dependencia) y para guardar las notas en el almacenamiento local cada vez que el estado de las notas cambia ([notes] como dependencia).
+Estos Hooks ayudan a gestionar el estado y a realizar acciones específicas en ciertos puntos del ciclo de vida del componente, lo que es fundamental en el desarrollo de aplicaciones React.
