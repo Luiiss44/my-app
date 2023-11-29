@@ -1,0 +1,31 @@
+/* src/components/Note/Note.css */
+
+.note {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .note h2 {
+    margin-bottom: 5px;
+  }
+  
+  .note p {
+    margin-bottom: 10px;
+  }
+  
+  .note button {
+    background-color: #ff5f5f;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+  }
+  
+  .note button:hover {
+    background-color: #d43f3f;
+  }
+  

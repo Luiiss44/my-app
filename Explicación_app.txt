@@ -1,0 +1,77 @@
+
+/src (Directorio Raíz):
+
+    - Contiene todos los archivos fuente de tu aplicación React.
+    - Es el punto de entrada para la estructura del proyecto.
+
+/components (Directorio de Componentes):
+
+    - Contiene subdirectorios para organizar los diferentes tipos de componentes en tu aplicación.
+
+/Note (Directorio del Componente Note):
+
+    - Contiene los archivos específicos del componente Note.
+
+        Note.js:
+
+            - Representa el componente Note que muestra una nota individual.
+            - Recibe las propiedades note y removeNote.
+            - Renderiza el título, contenido y un botón de eliminación de la nota.
+
+        Note.css:
+
+            - Contiene estilos específicos para el componente Note.
+
+/NoteList (Directorio del Componente NoteList):
+
+- Contiene los archivos específicos del componente NoteList.
+
+    NoteList.js:
+
+        - Representa el componente NoteList que muestra una lista de notas.
+        - Recibe las propiedades notes y removeNote.
+        - Utiliza el componente Note para renderizar cada nota.
+        - Incluye un campo de búsqueda para filtrar las notas.
+
+    NoteList.css:
+
+        - Contiene estilos específicos para el componente NoteList.
+
+/NoteEditor (Directorio del Componente NoteEditor):
+
+    - Contiene los archivos específicos del componente NoteEditor.
+
+        NoteEditor.js:
+
+            - Representa el componente NoteEditor que permite añadir y editar notas.
+            - Recibe la propiedad addNote.
+            - Incluye formularios para ingresar el título y el contenido de la nota.
+
+        NoteEditor.css:
+
+        - Contiene estilos específicos para el componente NoteEditor.
+App.js:
+
+    - Representa el componente principal App.
+    - Contiene los estados y funciones para gestionar las notas.
+    - Renderiza el encabezado, el componente NoteEditor, y el componente NoteList.
+
+App.css:
+
+    - Contiene estilos específicos para el componente App.
+
+index.js:
+
+    - Es el punto de entrada principal para la aplicación React.
+    - Importa el componente App y lo renderiza en el elemento con el ID 'root'.
+
+index.css:
+
+    - Contiene estilos globales que afectan a la aplicación en su conjunto.
+
+
+En resumen, la estructura del proyecto está organizada de manera modular 
+con subdirectorios para cada tipo de componente. Cada componente tiene sus 
+archivos específicos (JS y CSS) para mantener la coherencia y facilitar el mantenimiento 
+del código. El componente App es el componente principal que utiliza y organiza los demás 
+componentes para formar la interfaz de usuario completa.
